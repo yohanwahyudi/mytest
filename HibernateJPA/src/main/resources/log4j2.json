@@ -1,0 +1,65 @@
+{
+   "Configuration": {
+   	  "name":"default",
+   	  "properties":{
+   	  	"property":[
+   	  		{"name":"log-path", "value":"logs"},
+   	  		{"name":"archive", "value":"${log-path}/archive"}
+   	  	]   	  
+   	  },
+      "Appenders": {
+         "Console": {
+            "PatternLayout": {
+               "pattern": "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+            },
+            "name": "Console-Appender",
+            "target": "SYSTEM_OUT"
+         },
+         "RollingFile": {
+            "name":"RollingFile-Appender",
+            "fileName":"${log-path}/app.log",
+            "filePattern":"${archive}/app-backup-%d{MMddyyyy-HHmmss}-%i.log.gz",
+            "PatternLayout": {
+               "pattern":"[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+            },
+            "Policies": {
+               "SizeBasedTriggeringPolicy": {
+                  "size":"1 MB"
+               }
+            },
+            "DefaultRolloverStrategy": {
+               "max":"10"
+            }
+         },
+         "File":{
+         	"name":"File-Appender",
+         	"filename":"${log-path}/logfile.log",
+         	"PatternLayout":{
+         		"pattern":"[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+         	}
+         }
+         
+ 
+      },
+      "Loggers": {
+         "Root": {
+            "AppenderRef": [
+               {
+                  "ref": "Console-Appender"
+               }
+            ],
+            "level": "debug"
+         },
+         "logger":{
+         		"name":"djasper3.App",
+         		"level":"debug",
+         		"additivity":"false",
+         		"appender-ref":[
+         			{"ref":"RollingFile-Appender","level":"debug"},
+         			{"ref":"File-Appender","level":"debug"},
+         			{"ref":"Console-Appender","level":"debug"}
+         		]
+         }         
+      }
+   }
+}

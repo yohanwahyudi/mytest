@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DJR_2825" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" scriptletClass="ar.com.fdvs.dj.core.DJDefaultScriptlet" whenResourceMissingType="Key" uuid="4e6f4c86-464b-482c-8793-98b44be03db6">
+	<style name="dj_style_1_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="reportSubtitleStyle" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="subreportsDataSource" class="java.util.ArrayList"/>
+	<parameter name="statisticsArray" class="java.lang.Object"/>
+	<parameter name="r[g4sr1footer]" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="statistics" class="java.util.ArrayList"/>
+	<group name="DJR_2825_global_column_0">
+		<groupExpression><![CDATA["global"]]></groupExpression>
+		<groupHeader>
+			<band splitType="Immediate"/>
+		</groupHeader>
+		<groupFooter>
+			<band height="30" splitType="Immediate">
+				<subreport>
+					<reportElement positionType="Float" x="-20" y="0" width="595" height="30" isRemoveLineWhenBlank="true" uuid="abff231f-81c0-469f-9eb2-cd2d7a210c35"/>
+					<parametersMapExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}]]></parametersMapExpression>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource((java.util.Collection)$P{REPORT_PARAMETERS_MAP}.get( "statistics" ) )]]></dataSourceExpression>
+					<subreportExpression><![CDATA[(net.sf.jasperreports.engine.JasperReport)$P{REPORT_PARAMETERS_MAP}.get( "r[g1sr1footer]" )]]></subreportExpression>
+				</subreport>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="DJR_2825_global_column_1">
+		<groupExpression><![CDATA["global"]]></groupExpression>
+		<groupHeader>
+			<band splitType="Immediate"/>
+		</groupHeader>
+		<groupFooter>
+			<band height="32" splitType="Immediate">
+				<break>
+					<reportElement key="pageBreak_for_net.sf.jasperreports.engine.design.JRDesignGroup@58ea606c" positionType="Float" x="0" y="31" width="0" height="1" uuid="7a744593-1d2a-4bde-b73c-64c305791cb8"/>
+				</break>
+				<subreport>
+					<reportElement positionType="Float" x="-20" y="1" width="595" height="30" isRemoveLineWhenBlank="true" uuid="0ca356f5-59bb-4b7a-8684-d5f75c8ef274"/>
+					<parametersMapExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}]]></parametersMapExpression>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource((java.util.Collection)$P{REPORT_PARAMETERS_MAP}.get( "statistics" ) )]]></dataSourceExpression>
+					<subreportExpression><![CDATA[(net.sf.jasperreports.engine.JasperReport)$P{REPORT_PARAMETERS_MAP}.get( "r[g2sr1footer]" )]]></subreportExpression>
+				</subreport>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="DJR_2825_global_column_2">
+		<groupExpression><![CDATA["global"]]></groupExpression>
+		<groupHeader>
+			<band splitType="Immediate"/>
+		</groupHeader>
+		<groupFooter>
+			<band height="32" splitType="Immediate">
+				<break>
+					<reportElement key="pageBreak_for_net.sf.jasperreports.engine.design.JRDesignGroup@6f45df59" positionType="Float" x="0" y="31" width="0" height="1" uuid="88d39dda-c64b-4905-8760-450fee93b642"/>
+				</break>
+				<subreport>
+					<reportElement positionType="Float" x="-20" y="1" width="595" height="30" isRemoveLineWhenBlank="true" uuid="09d5ade0-3c9c-46c4-9309-3e1e8c3e6050"/>
+					<parametersMapExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}]]></parametersMapExpression>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource((java.util.Collection)$P{REPORT_PARAMETERS_MAP}.get( "statistics" ) )]]></dataSourceExpression>
+					<subreportExpression><![CDATA[(net.sf.jasperreports.engine.JasperReport)$P{REPORT_PARAMETERS_MAP}.get( "r[g3sr1footer]" )]]></subreportExpression>
+				</subreport>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="DJR_2825_global_column_3">
+		<groupExpression><![CDATA["global"]]></groupExpression>
+		<groupHeader>
+			<band splitType="Immediate"/>
+		</groupHeader>
+		<groupFooter>
+			<band height="32" splitType="Immediate">
+				<break>
+					<reportElement key="pageBreak_for_net.sf.jasperreports.engine.design.JRDesignGroup@38e79ae3" positionType="Float" x="0" y="31" width="0" height="1" uuid="2ddd9690-f005-4090-b81b-08a3df29c51f"/>
+				</break>
+				<subreport>
+					<reportElement positionType="Float" x="-20" y="1" width="595" height="30" isRemoveLineWhenBlank="true" uuid="a89eedc3-16a5-4df7-a16c-915533c00736"/>
+					<parametersMapExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}]]></parametersMapExpression>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource((java.util.Collection)$P{REPORT_PARAMETERS_MAP}.get( "statistics" ) )]]></dataSourceExpression>
+					<subreportExpression><![CDATA[(net.sf.jasperreports.engine.JasperReport)$P{REPORT_PARAMETERS_MAP}.get( "r[g4sr1footer]" )]]></subreportExpression>
+				</subreport>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="DJR_2825_global_column_4">
+		<groupExpression><![CDATA["global"]]></groupExpression>
+		<groupHeader>
+			<band splitType="Immediate"/>
+		</groupHeader>
+		<groupFooter>
+			<band splitType="Immediate"/>
+		</groupFooter>
+	</group>
+	<pageHeader>
+		<band height="45">
+			<textField isStretchWithOverflow="true">
+				<reportElement style="dj_style_1_" positionType="Float" x="0" y="0" width="555" height="30" isRemoveLineWhenBlank="true" uuid="59e355c4-927c-4b00-8ce8-179f493ae196">
+					<printWhenExpression><![CDATA[new java.lang.Boolean(((Number)$V{PAGE_NUMBER}).doubleValue() == 1)]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA["Concatenated reports"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement style="reportSubtitleStyle" positionType="Float" x="0" y="30" width="555" height="15" isRemoveLineWhenBlank="true" uuid="8db1fdfa-1ec7-427b-98b3-e5d0a43ef3bd">
+					<printWhenExpression><![CDATA[new java.lang.Boolean(((Number)$V{PAGE_NUMBER}).doubleValue() == 1)]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA["All the reports shown here are concatenated as sub reports"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band/>
+	</columnHeader>
+	<detail>
+		<band splitType="Immediate"/>
+	</detail>
+	<pageFooter>
+		<band height="15">
+			<textField evaluationTime="Report">
+				<reportElement positionType="Float" x="277" y="0" width="80" height="15" uuid="08b1f9f9-5772-42d8-bdb0-ecce9ef40d73"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[""+" " + ($V{PAGE_NUMBER}+0)+" " + ""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="197" y="0" width="80" height="15" uuid="b9fa15ed-3caa-4b44-87d2-71b6674b3c0c"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$R{autotext.page}+" " + ($V{PAGE_NUMBER}+0)+" " + $R{autotext.of}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement positionType="Float" x="277" y="0" width="80" height="15" uuid="08b1f9f9-5772-42d8-bdb0-ecce9ef40d73"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[""+" " + ($V{PAGE_NUMBER}+0)+" " + ""]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
