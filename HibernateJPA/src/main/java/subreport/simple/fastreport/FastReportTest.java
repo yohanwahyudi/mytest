@@ -13,6 +13,7 @@ import ar.com.fdvs.dj.domain.builders.FastReportBuilder;
 import ar.com.fdvs.dj.domain.builders.StyleBuilder;
 import ar.com.fdvs.dj.domain.constants.Font;
 import ar.com.fdvs.dj.domain.constants.HorizontalAlign;
+import ar.com.fdvs.dj.domain.constants.Page;
 import net.sf.jasperreports.view.JasperDesignViewer;
 import net.sf.jasperreports.view.JasperViewer;
 import subreport.simple.dependency.BaseDjReportTest;
@@ -31,6 +32,8 @@ public class FastReportTest extends BaseDjReportTest {
 		/*
 		 * Creates the DynamicReportBuilder and sets the basic options for the report
 		 */
+		
+		
 		FastReportBuilder drb = new FastReportBuilder();
 		drb.addColumn("State", "state", String.class.getName(), 30)
 				.addColumn("Branch", "branch", String.class.getName(), 30)
@@ -43,7 +46,7 @@ public class FastReportTest extends BaseDjReportTest {
 				.setTitle("November " + getYear() + " sales report")
 				.setTitleStyle(titleStyle)
 				.setSubtitle("This report was generated at " + new Date()).setSubtitleStyle(subTitleStyle)
-				.setPrintBackgroundOnOddRows(true)
+				.setPrintBackgroundOnOddRows(true).setPageSizeAndOrientation(Page.Page_A4_Landscape())
 				.setUseFullPageWidth(true);
 
 		

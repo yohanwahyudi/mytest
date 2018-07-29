@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DJR_9907" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="555" leftMargin="30" rightMargin="10" topMargin="20" bottomMargin="10" scriptletClass="ar.com.fdvs.dj.core.DJDefaultScriptlet" whenResourceMissingType="Key" uuid="d23d4e1b-47e3-44dc-9315-32556dd90198">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DJR_3974" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="NoPages" columnWidth="802" leftMargin="30" rightMargin="10" topMargin="20" bottomMargin="10" scriptletClass="ar.com.fdvs.dj.core.DJDefaultScriptlet" whenResourceMissingType="Key" uuid="35767c68-0f57-4d34-8d22-69d762778f47">
 	<style name="dj_style_1_" hTextAlign="Center" hImageAlign="Center" isBlankWhenNull="true" fontName="Roboto Black" fontSize="20" isBold="false" isItalic="false" isUnderline="false" pdfFontName="/fonts/Roboto-Black.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 	<style name="dj_style_2_" hTextAlign="Left" hImageAlign="Left" isBlankWhenNull="true" fontName="Calibri" fontSize="8" isBold="false" isItalic="false" isUnderline="false" pdfFontName="/fonts/calibri.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 	<style name="defaultHeaderStyle" mode="Opaque" forecolor="#000000" backcolor="#C0C0C0" radius="0" hTextAlign="Center" hImageAlign="Center" vTextAlign="Middle" vImageAlign="Middle" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="true" isItalic="false" isUnderline="false" isPdfEmbedded="false">
@@ -23,7 +23,7 @@
 			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 		</box>
 	</style>
-	<style name="Arial_for_column_DJR_9907_COLUMN_0_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+	<style name="Arial_for_column_DJR_3974_COLUMN_0_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
 		<box padding="2">
 			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 		</box>
@@ -32,7 +32,7 @@
 			<style mode="Opaque" backcolor="rgba(200, 200, 200, 0.5019608)"/>
 		</conditionalStyle>
 	</style>
-	<style name="Arial_for_column_DJR_9907_COLUMN_1_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+	<style name="Arial_for_column_DJR_3974_COLUMN_1_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
 		<box padding="2">
 			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 		</box>
@@ -41,7 +41,7 @@
 			<style mode="Opaque" backcolor="rgba(200, 200, 200, 0.5019608)"/>
 		</conditionalStyle>
 	</style>
-	<style name="Arial_for_column_DJR_9907_COLUMN_2_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+	<style name="Arial_for_column_DJR_3974_COLUMN_2_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
 		<box padding="2">
 			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 		</box>
@@ -50,7 +50,7 @@
 			<style mode="Opaque" backcolor="rgba(200, 200, 200, 0.5019608)"/>
 		</conditionalStyle>
 	</style>
-	<style name="Arial_for_column_DJR_9907_COLUMN_3_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+	<style name="Arial_for_column_DJR_3974_COLUMN_3_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
 		<box padding="2">
 			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 		</box>
@@ -64,7 +64,7 @@
 			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 		</box>
 	</style>
-	<style name="Arial_for_column_DJR_9907_COLUMN_4_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Right" hImageAlign="Right" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+	<style name="Arial_for_column_DJR_3974_COLUMN_4_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Right" hImageAlign="Right" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
 		<box padding="2">
 			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 		</box>
@@ -73,7 +73,7 @@
 			<style mode="Opaque" backcolor="rgba(200, 200, 200, 0.5019608)"/>
 		</conditionalStyle>
 	</style>
-	<style name="Arial_for_column_DJR_9907_COLUMN_5_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Right" hImageAlign="Right" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+	<style name="Arial_for_column_DJR_3974_COLUMN_5_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Right" hImageAlign="Right" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
 		<box padding="2">
 			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 		</box>
@@ -87,7 +87,7 @@
 			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 		</box>
 	</style>
-	<style name="Arial_for_column_DJR_9907_COLUMN_6_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Right" hImageAlign="Right" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+	<style name="Arial_for_column_DJR_3974_COLUMN_6_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Right" hImageAlign="Right" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
 		<box padding="2">
 			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 		</box>
@@ -103,12 +103,12 @@
 	<field name="id" class="java.lang.Long"/>
 	<field name="quantity" class="java.lang.Long"/>
 	<field name="amount" class="java.lang.Float"/>
-	<group name="DJR_9907_group[0]_for_column_0-DJR_9907_COLUMN_0">
+	<group name="DJR_3974_group[0]_for_column_0-DJR_3974_COLUMN_0">
 		<groupExpression><![CDATA[$F{state}]]></groupExpression>
 		<groupHeader>
 			<band height="15" splitType="Immediate">
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Arial_for_group_0_" positionType="Float" x="0" y="0" width="74" height="15" isPrintWhenDetailOverflows="true" printWhenGroupChanges="DJR_9907_group[0]_for_column_0-DJR_9907_COLUMN_0" uuid="ac00cd02-15cd-41cd-97df-5ac3812ac33c"/>
+					<reportElement style="Arial_for_group_0_" positionType="Float" x="0" y="0" width="120" height="15" isPrintWhenDetailOverflows="true" printWhenGroupChanges="DJR_3974_group[0]_for_column_0-DJR_3974_COLUMN_0" uuid="39a37cd9-b7b1-46c1-aafa-ab7f2dec6528"/>
 					<textFieldExpression><![CDATA[$F{state}]]></textFieldExpression>
 				</textField>
 			</band>
@@ -117,12 +117,12 @@
 			<band splitType="Immediate"/>
 		</groupFooter>
 	</group>
-	<group name="DJR_9907_group[1]_for_column_1-DJR_9907_COLUMN_1">
+	<group name="DJR_3974_group[1]_for_column_1-DJR_3974_COLUMN_1">
 		<groupExpression><![CDATA[$F{branch}]]></groupExpression>
 		<groupHeader>
 			<band height="15" splitType="Immediate">
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Arial_for_group_1_" positionType="Float" x="74" y="0" width="74" height="15" isPrintWhenDetailOverflows="true" printWhenGroupChanges="DJR_9907_group[1]_for_column_1-DJR_9907_COLUMN_1" uuid="fa0c3fbe-c720-45fa-9438-88f7b00b78a9"/>
+					<reportElement style="Arial_for_group_1_" positionType="Float" x="120" y="0" width="120" height="15" isPrintWhenDetailOverflows="true" printWhenGroupChanges="DJR_3974_group[1]_for_column_1-DJR_3974_COLUMN_1" uuid="13208b8c-fffb-4314-b55b-731e006e3dd2"/>
 					<textFieldExpression><![CDATA[$F{branch}]]></textFieldExpression>
 				</textField>
 			</band>
@@ -134,47 +134,47 @@
 	<pageHeader>
 		<band height="45">
 			<textField isStretchWithOverflow="true">
-				<reportElement style="dj_style_1_" positionType="Float" x="0" y="0" width="555" height="30" isRemoveLineWhenBlank="true" uuid="eac73577-84ee-4a9c-9f46-f19460827ca4">
+				<reportElement style="dj_style_1_" positionType="Float" x="0" y="0" width="802" height="30" isRemoveLineWhenBlank="true" uuid="ba511d07-a756-4a0b-9ac8-b670a6d90238">
 					<printWhenExpression><![CDATA[new java.lang.Boolean(((Number)$V{PAGE_NUMBER}).doubleValue() == 1)]]></printWhenExpression>
 				</reportElement>
 				<textFieldExpression><![CDATA["November 2018 sales report"]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
-				<reportElement style="dj_style_2_" positionType="Float" x="0" y="30" width="555" height="15" isRemoveLineWhenBlank="true" uuid="9cb8c2d2-e819-4a28-9857-1aeddde5eb36">
+				<reportElement style="dj_style_2_" positionType="Float" x="0" y="30" width="802" height="15" isRemoveLineWhenBlank="true" uuid="a185859d-ecbd-45c9-a275-31186b8212ca">
 					<printWhenExpression><![CDATA[new java.lang.Boolean(((Number)$V{PAGE_NUMBER}).doubleValue() == 1)]]></printWhenExpression>
 				</reportElement>
-				<textFieldExpression><![CDATA["This report was generated at Thu Jul 12 16:01:41 ICT 2018"]]></textFieldExpression>
+				<textFieldExpression><![CDATA["This report was generated at Fri Jul 27 17:43:27 ICT 2018"]]></textFieldExpression>
 			</textField>
 		</band>
 	</pageHeader>
 	<columnHeader>
 		<band height="30">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement key="header_State" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="74" height="30" isPrintWhenDetailOverflows="true" uuid="edb8b1a2-b649-4b1a-84ec-5bbf815b98fc"/>
+				<reportElement key="header_State" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="120" height="30" isPrintWhenDetailOverflows="true" uuid="fdff1faf-f573-410c-b561-e38475735d76"/>
 				<textFieldExpression><![CDATA["State"]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement key="header_Branch" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="74" y="0" width="74" height="30" isPrintWhenDetailOverflows="true" uuid="47ec48ea-cd79-44a8-8988-200cc19d168e"/>
+				<reportElement key="header_Branch" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="120" y="0" width="120" height="30" isPrintWhenDetailOverflows="true" uuid="4d3817d0-0ec6-483c-a23b-43101209a01a"/>
 				<textFieldExpression><![CDATA["Branch"]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement key="header_Product Line" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="148" y="0" width="123" height="30" isPrintWhenDetailOverflows="true" uuid="bac0555a-b2da-41de-9f55-af26d613ae9e"/>
+				<reportElement key="header_Product Line" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="240" y="0" width="200" height="30" isPrintWhenDetailOverflows="true" uuid="04029af4-e617-4d84-8e72-297c88467302"/>
 				<textFieldExpression><![CDATA["Product Line"]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement key="header_Item" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="271" y="0" width="124" height="30" isPrintWhenDetailOverflows="true" uuid="dfbfffa7-3d95-4149-91b4-26a460811726"/>
+				<reportElement key="header_Item" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="440" y="0" width="202" height="30" isPrintWhenDetailOverflows="true" uuid="df9e368f-ebfb-4bdc-b005-fb039100e2c3"/>
 				<textFieldExpression><![CDATA["Item"]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement key="header_Item Code" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="395" y="0" width="30" height="30" isPrintWhenDetailOverflows="true" uuid="cf285382-2fa8-43ae-ad25-094dabbd7cd3"/>
+				<reportElement key="header_Item Code" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="642" y="0" width="30" height="30" isPrintWhenDetailOverflows="true" uuid="e5f91dfb-f525-482e-9c63-3a0af88558a3"/>
 				<textFieldExpression><![CDATA["Item Code"]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement key="header_Quantity" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="425" y="0" width="60" height="30" isPrintWhenDetailOverflows="true" uuid="3110f3af-23d8-4e1b-b8fd-a3b742d0212d"/>
+				<reportElement key="header_Quantity" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="672" y="0" width="60" height="30" isPrintWhenDetailOverflows="true" uuid="7582eb8d-a26c-4cd0-9fed-3d14b1ce855d"/>
 				<textFieldExpression><![CDATA["Quantity"]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement key="header_Amount" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="485" y="0" width="70" height="30" isPrintWhenDetailOverflows="true" uuid="1e649010-0a40-42d5-a8a7-4fa7740d1726"/>
+				<reportElement key="header_Amount" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="732" y="0" width="70" height="30" isPrintWhenDetailOverflows="true" uuid="8ae937b3-76ac-454f-bb55-59b1233e37e0"/>
 				<textFieldExpression><![CDATA["Amount"]]></textFieldExpression>
 			</textField>
 		</band>
@@ -182,23 +182,23 @@
 	<detail>
 		<band height="15" splitType="Immediate">
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement style="Arial_for_column_DJR_9907_COLUMN_2_" positionType="Float" stretchType="RelativeToTallestObject" x="148" y="0" width="123" height="15" isPrintWhenDetailOverflows="true" uuid="3c628c75-4c08-4d73-9229-1ee865213812"/>
+				<reportElement style="Arial_for_column_DJR_3974_COLUMN_2_" positionType="Float" stretchType="RelativeToTallestObject" x="240" y="0" width="200" height="15" isPrintWhenDetailOverflows="true" uuid="e5d5a0aa-e903-4d29-ba85-856e53cc7b25"/>
 				<textFieldExpression><![CDATA[$F{productLine}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement style="Arial_for_column_DJR_9907_COLUMN_3_" positionType="Float" stretchType="RelativeToTallestObject" x="271" y="0" width="124" height="15" isPrintWhenDetailOverflows="true" uuid="c40894ff-d88d-4fa5-81e6-271df41c2a79"/>
+				<reportElement style="Arial_for_column_DJR_3974_COLUMN_3_" positionType="Float" stretchType="RelativeToTallestObject" x="440" y="0" width="202" height="15" isPrintWhenDetailOverflows="true" uuid="56b0c815-25da-4645-b93a-1b3b779a279b"/>
 				<textFieldExpression><![CDATA[$F{item}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement style="Arial_for_column_DJR_9907_COLUMN_4_" positionType="Float" stretchType="RelativeToTallestObject" x="395" y="0" width="30" height="15" isPrintWhenDetailOverflows="true" uuid="4a6d950f-6a9e-45e1-95dc-ea05a5d90395"/>
+				<reportElement style="Arial_for_column_DJR_3974_COLUMN_4_" positionType="Float" stretchType="RelativeToTallestObject" x="642" y="0" width="30" height="15" isPrintWhenDetailOverflows="true" uuid="e66792b9-7fd4-470b-8a85-270ce348369b"/>
 				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement style="Arial_for_column_DJR_9907_COLUMN_5_" positionType="Float" stretchType="RelativeToTallestObject" x="425" y="0" width="60" height="15" isPrintWhenDetailOverflows="true" uuid="781407b3-d2d8-4e31-a598-11aa636aa2c0"/>
+				<reportElement style="Arial_for_column_DJR_3974_COLUMN_5_" positionType="Float" stretchType="RelativeToTallestObject" x="672" y="0" width="60" height="15" isPrintWhenDetailOverflows="true" uuid="3337a7d3-36b9-405b-b7a0-5418181fecaa"/>
 				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" pattern="$ #.00" isBlankWhenNull="true">
-				<reportElement style="Arial_for_column_DJR_9907_COLUMN_6_" positionType="Float" stretchType="RelativeToTallestObject" x="485" y="0" width="70" height="15" isPrintWhenDetailOverflows="true" uuid="64205d91-dc03-434a-836e-d377dfa92801"/>
+				<reportElement style="Arial_for_column_DJR_3974_COLUMN_6_" positionType="Float" stretchType="RelativeToTallestObject" x="732" y="0" width="70" height="15" isPrintWhenDetailOverflows="true" uuid="def9c78c-2641-4bb6-ab08-e0275ab80810"/>
 				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
 			</textField>
 		</band>

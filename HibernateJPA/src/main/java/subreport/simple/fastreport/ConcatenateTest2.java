@@ -10,15 +10,18 @@ import java.util.Map;
 import ar.com.fdvs.dj.core.DJConstants;
 import ar.com.fdvs.dj.core.DynamicJasperHelper;
 import ar.com.fdvs.dj.core.layout.ClassicLayoutManager;
+import ar.com.fdvs.dj.domain.AutoText;
 import ar.com.fdvs.dj.domain.DynamicReport;
 import ar.com.fdvs.dj.domain.Style;
 import ar.com.fdvs.dj.domain.builders.ColumnBuilder;
 import ar.com.fdvs.dj.domain.builders.ColumnBuilderException;
+import ar.com.fdvs.dj.domain.builders.DynamicReportBuilder;
 import ar.com.fdvs.dj.domain.builders.FastReportBuilder;
 import ar.com.fdvs.dj.domain.builders.StyleBuilder;
 import ar.com.fdvs.dj.domain.constants.Border;
 import ar.com.fdvs.dj.domain.constants.Font;
 import ar.com.fdvs.dj.domain.constants.HorizontalAlign;
+import ar.com.fdvs.dj.domain.constants.Page;
 import ar.com.fdvs.dj.domain.constants.Transparency;
 import ar.com.fdvs.dj.domain.constants.VerticalAlign;
 import ar.com.fdvs.dj.domain.entities.columns.AbstractColumn;
@@ -30,15 +33,9 @@ import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.view.JasperViewer;
 
-public class FastReportTest2 {
+public class ConcatenateTest2 {
 	
 	protected final static Map<String, Object> params = new HashMap<String, Object>();
-	
-	private static Style createTitleStyle() {
-		Font font = new Font(12,"Roboto Black","/fonts/Roboto-Black.ttf",Font.PDF_ENCODING_Identity_H_Unicode_with_horizontal_writing,true);
-		
-		return new StyleBuilder(true).setFont(font).setHorizontalAlign(HorizontalAlign.CENTER).build();
-	}
 	
 	private static Style createHeaderStyle() {
 		Font font = new Font();
@@ -117,41 +114,34 @@ public class FastReportTest2 {
 //		AbstractColumn columnAchievement = createColumn("achievement", String.class, "Achievement", 50, createHeaderStyle(), createDetailTextStyle());
 //		AbstractColumn columnRemarks = createColumn("remarks", String.class, "Remarks", 50, createHeaderStyle(), createDetailTextStyle());
 //		
-		
-		FastReportBuilder frb = new FastReportBuilder();
-		frb.addColumn("Division", "division", String.class, 45,createDetailTextStyle(), createHeaderStyle())
-			.addColumn("Name","name",String.class, 150, createDetailTextStyle(), createHeaderStyle())
-			.addColumn("Assigned","assigned",Integer.class, 50,createDetailTextStyle(), createHeaderStyle())
-			.addColumn("Pending","pending",Integer.class, 50,createDetailTextStyle(), createHeaderStyle())
-			.addColumn("Achieved","achieved",Integer.class, 50,createDetailTextStyle(), createHeaderStyle())
-			.addColumn("Missed","missed",Integer.class, 50,createDetailTextStyle(), createHeaderStyle())
-			.addColumn("Ticket Total","ticketTotal",Integer.class, 40,createDetailTextStyle(), createHeaderStyle())
-			.addColumn("Achievement","achievement",String.class, 50,createDetailTextStyle(), createHeaderStyle())
-			.addColumn("Remarks","remarks",String.class, 50,createDetailTextStyle(), createHeaderStyle())
-			.addGroups(1)
-			.setTitle("PERFORMANCE SUPPORT AGENT VDI BASED ON ITOP JULY 2018").setTitleStyle(createTitleStyle())
-			.setSubtitle("This report was generated at " + new Date()).setSubtitleStyle(createDetailTextStyle())
-			.setPrintBackgroundOnOddRows(true).setOddRowBackgroundStyle(createOddBgStyle())
-			.setUseFullPageWidth(true);
-		
 		List<Subreport1> list = new ArrayList<Subreport1>();
 		list = getListSubreport1();
-		
-//		frb.addField("subreport1", list.getClass());
-		
 		params.put("subreport1",list);
 		
 		DynamicReport subReport1 = createHeaderSubreport();
-//		frb.addSubreportInGroupFooter(1,subReport1, new ClassicLayoutManager(), "subreport1", 
-//				DJConstants.DATA_SOURCE_ORIGIN_PARAMETER, DJConstants.DATA_SOURCE_TYPE_COLLECTION);
+		DynamicReport subReport2 = createHeaderSubreport2();
 		
-		frb.addConcatenatedReport(subReport1, new ClassicLayoutManager(), "subreport1",
-				DJConstants.DATA_SOURCE_ORIGIN_PARAMETER, DJConstants.DATA_SOURCE_TYPE_COLLECTION, false);
+		Page page = new Page();
+		page.setOrientationPortrait(false);
 		
-		frb.addConcatenatedReport(subReport1, new ClassicLayoutManager(), "subreport1",
-				DJConstants.DATA_SOURCE_ORIGIN_PARAMETER, DJConstants.DATA_SOURCE_TYPE_COLLECTION, true);
+		DynamicReportBuilder drb = new DynamicReportBuilder();
+		Integer margin = 20;
+		Style titleStyle = new Style();
+		drb.setTitleStyle(titleStyle).setTitle("Concatenated reports") // defines the title of the report
+				.setSubtitle("All the reports shown here are concatenated as sub reports").setDetailHeight(15)
+				.setLeftMargin(margin).setRightMargin(margin).setTopMargin(margin).setBottomMargin(margin)
+				.setUseFullPageWidth(true).setWhenNoDataAllSectionNoDetail()
+				.addAutoText(AutoText.AUTOTEXT_PAGE_X_OF_Y, AutoText.POSITION_FOOTER, AutoText.ALIGNMENT_CENTER)
+				
+				.addConcatenatedReport(subReport1, new ClassicLayoutManager(), "subreport1",
+						DJConstants.DATA_SOURCE_ORIGIN_PARAMETER, DJConstants.DATA_SOURCE_TYPE_COLLECTION, false)
+				.addConcatenatedReport(subReport1, new ClassicLayoutManager(), "subreport1",
+						DJConstants.DATA_SOURCE_ORIGIN_PARAMETER, DJConstants.DATA_SOURCE_TYPE_COLLECTION, true)
+				.addConcatenatedReport(subReport2, new ClassicLayoutManager(), "subreport2",
+						DJConstants.DATA_SOURCE_ORIGIN_PARAMETER, DJConstants.DATA_SOURCE_TYPE_COLLECTION, true);
 		
-		DynamicReport dr = frb.build();
+		
+		DynamicReport dr = drb.build();
 		
 		return dr;
 		
@@ -197,7 +187,23 @@ public class FastReportTest2 {
 		DynamicReport dr = rb.addColumn("ref", "ref", String.class, 50, createDetailTextStyle(), createHeaderStyle())
 				.addColumn("title", "title", String.class, 100, createDetailTextStyle(), createHeaderStyle())
 				.setMargins(5, 5, 20, 20).setPrintBackgroundOnOddRows(true).setOddRowBackgroundStyle(createOddBgStyle())
-				.setTitle("Header Subreport for this group")
+//				.setTitle("Header Subreport for this group")
+				.build();
+		return dr;
+	}
+	
+	private static DynamicReport createHeaderSubreport2() throws Exception {
+		
+		Page page = new Page();
+		page.setOrientationPortrait(false);
+		
+		FastReportBuilder rb = new FastReportBuilder();
+		DynamicReport dr = rb.addColumn("ref", "ref", String.class, 50, createDetailTextStyle(), createHeaderStyle())
+				.addColumn("title", "title", String.class, 100, createDetailTextStyle(), createHeaderStyle())
+				.addColumn("title", "title1", String.class, 100, createDetailTextStyle(), createHeaderStyle())
+				.addColumn("title", "title2", String.class, 100, createDetailTextStyle(), createHeaderStyle())
+				.setMargins(5, 5, 20, 20).setPrintBackgroundOnOddRows(true).setOddRowBackgroundStyle(createOddBgStyle()).setPageSizeAndOrientation(page)
+//				.setTitle("Header Subreport for this group")
 				.build();
 		return dr;
 	}
