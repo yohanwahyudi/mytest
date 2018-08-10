@@ -29,6 +29,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.view.JasperViewer;
+import subreport.simple.dependency.ReportExporter;
 
 public class FastReportTest2 {
 	
@@ -212,6 +213,8 @@ public class FastReportTest2 {
 	
 	public static void main (String args[]) throws JRException, Exception {
 		JasperViewer jv = new JasperViewer(getReport2());
+		ReportExporter.exportReport(getReport2(), System.getProperty("user.dir") + "/target/reports/" 
+				+ "reporttest" + ".pdf");
 		jv.setVisible(true);
 	}
 
