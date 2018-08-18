@@ -70,7 +70,7 @@ public class HttpClientProxy {
 		HttpHost target = new HttpHost(url, 80, "http");
 
 		HttpGet request = new HttpGet(url);
-		request.setConfig(getRequestConfig());
+//		request.setConfig(getRequestConfig());
 		
 		// add header
 		request.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
@@ -188,7 +188,7 @@ public class HttpClientProxy {
 	private void sendGet(String url) throws Exception {
 
 		HttpGet get = new HttpGet(url);
-		get.setConfig(getRequestConfig());
+//		get.setConfig(getRequestConfig());
 
 		// add header
 		// add header
