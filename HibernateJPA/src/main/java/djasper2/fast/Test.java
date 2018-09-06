@@ -2,7 +2,8 @@ package djasper2.fast;
 
 import java.util.HashMap;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import ar.com.fdvs.dj.core.DynamicJasperHelper;
 import ar.com.fdvs.dj.core.layout.ClassicLayoutManager;
@@ -18,7 +19,7 @@ import net.sf.jasperreports.view.JasperViewer;
 
 public class Test {
 	
-	protected static Logger logger = Logger.getLogger(Test.class);
+	protected static Logger logger = LogManager.getLogger(Test.class);
 	
 	public static void main (String args[]) throws ColumnBuilderException, ClassNotFoundException, JRException {
 		

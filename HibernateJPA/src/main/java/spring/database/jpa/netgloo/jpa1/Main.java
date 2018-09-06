@@ -2,8 +2,8 @@ package spring.database.jpa.netgloo.jpa1;
 
 import java.io.File;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.xml.DOMConfigurator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -16,7 +16,7 @@ import spring.database.jpa.netgloo.jpa1.config.PersistenceContext;
 
 public class Main {
 
-	private final static Logger logger = Logger.getLogger(Main.class);
+	private final static Logger logger = LogManager.getLogger(Main.class);
 	
 	@Autowired
 	private static CompanyRepository companyRepository;
@@ -29,7 +29,7 @@ public class Main {
 
 	public static void main(String args[]) {		
 		
-		DOMConfigurator.configure(System.getProperty("user.dir")+File.separator+"log4j.xml");
+//		DOMConfigurator.configure(System.getProperty("user.dir")+File.separator+"log4j.xml");
 		
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(PersistenceContext.class);
 

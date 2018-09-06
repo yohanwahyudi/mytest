@@ -3,8 +3,8 @@ package spring.database.jpa.orm.main;
 import java.io.File;
 import java.util.Arrays;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.xml.DOMConfigurator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import spring.database.jpa.orm.model.Product;
@@ -12,11 +12,11 @@ import spring.database.jpa.orm.service.ProductService;
 
 public class SpringDataJPAMain {
 
-	private final static Logger logger = Logger.getLogger(SpringDataJPAMain.class);
+	private final static Logger logger = LogManager.getLogger(SpringDataJPAMain.class);
 
 	public static void main(String[] args) {
 
-		DOMConfigurator.configure(System.getProperty("user.dir") + File.separator + "log4j.xml");
+//		DOMConfigurator.configure(System.getProperty("user.dir") + File.separator + "log4j.xml");
 
 		// Create Spring application context
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:/spring.xml");

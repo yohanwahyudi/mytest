@@ -2,17 +2,17 @@ package spring.hibernate.saveupdate;
 
 import java.io.File;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.xml.DOMConfigurator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 public class SimplestSaveEntityExample {
-	private static final Logger logger = Logger.getLogger(SimplestSaveEntityExample.class);
+	private static final Logger logger = LogManager.getLogger(SimplestSaveEntityExample.class);
 
 	public static void main(String[] args) {
-		DOMConfigurator.configure(System.getProperty("user.dir") + File.separator + "log4j.xml");
+//		DOMConfigurator.configure(System.getProperty("user.dir") + File.separator + "log4j.xml");
 
 		// Session sessionOne = HibernateUtil.getSessionFactory().openSession();
 		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();

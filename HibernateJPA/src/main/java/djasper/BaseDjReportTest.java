@@ -4,7 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.*;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import ar.com.fdvs.dj.core.DynamicJasperHelper;
 import ar.com.fdvs.dj.core.layout.ClassicLayoutManager;
@@ -23,7 +24,7 @@ public abstract class BaseDjReportTest {
   		return params;
   	}
   
-  	protected static final Logger log = Logger.getLogger(BaseDjReportTest.class);
+  	protected static final Logger log = LogManager.getLogger(BaseDjReportTest.class);
   
   	protected JasperPrint jp;
   	protected JasperReport jr;
