@@ -2,8 +2,10 @@ package subreport.simple.subreport;
 
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Map;
 
 import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.view.JasperDesignViewer;
 import net.sf.jasperreports.view.JasperViewer;
@@ -22,9 +24,14 @@ import subreport.simple.dependency.ReportExporter;
 import subreport.simple.dependency.TestRepositoryProducts;
 import subreport.simple.Product;
 
-public class ConcatenatedReportTest extends BaseDjReportTest {
+public class ConcatenatedReportTest {//extends BaseDjReportTest {
+	
+	 protected final Map<String, Object> params = new HashMap<String, Object>();
+	 private DynamicReport dr;
+	 private JasperReport jr;
+	 private JasperPrint jp;
 
-	@Override
+//	@Override
 	public DynamicReport buildReport() throws Exception {
 		Style titleStyle = new Style();
 		// titleStyle.setFont(new Font(24, Font._FONT_VERDANA, true));
@@ -71,15 +78,15 @@ public class ConcatenatedReportTest extends BaseDjReportTest {
 
 		// thats it!!!!
 		// DynamicReport dr = drb.build();
-		dr = drb.build();
+//		dr = drb.build();
 
-		return dr;
+		return drb.build();
 	}
 
 	public void testReport() throws Exception {
 		dr = buildReport();
 
-		jr = DynamicJasperHelper.generateJasperReport(dr, getLayoutManager(), params);
+		jr = DynamicJasperHelper.generateJasperReport(dr, new ClassicLayoutManager(), params);
 
 		/*
 		 * Creates the JasperPrint object, we pass as a Parameter the JasperReport
